@@ -32,38 +32,46 @@ A fully worked example is in **[DEMO_WALKTHROUGH.md](DEMO_WALKTHROUGH.md)**.
 
 ---
 
+## Who does what (in one line each)
+
+- **Author** — makes **one branch per publication** and adds the cover page to it, **once**. Then responds to comments.
+- **Reviewer** (any ISSC member) — **never** makes a branch or commits anything; comments entirely in the browser.
+- **Paper Handler** (PubCom) — opens/closes the review, applies labels, runs follow-ups, releases to the Chair.
+
 ## For authors
 
 ### 1 · Register (email or Slack)
 Message PubCom with **title, author(s), abstract**, and your **preliminary category and class**.
 If you want specific expert reviewers invited, name them now. The Chair assigns a **Paper Handler**,
 who confirms the publication is in ISSC remit and sets the final **category, class and timeline**.
-_(You may optionally open a [registration issue](../../issues/new?template=register-publication.md) for a public record — but it is not the review.)_
+_(Optional: open a [registration issue](../../issues/new?template=register-publication.md) for a public record — it is not the review itself.)_
 
 ### 2 · Open the review Pull Request
-Once the Paper Handler approves:
-1. **Create a new branch** off `main`, named for your publication (`Branches → New branch`).
-2. **Add your completed cover page** — copy [`Publications/summary_doc_template.md`](Publications/summary_doc_template.md), fill in every field (including the **enumerated section outline** under *Detailed description*), save it as `Publications/<your-title>.md`, and **commit**.
-3. **Open a Draft Pull Request**:
-   - Paste the cover-page text into the description (the paper/software PR template gives you the checklist to paste it under).
-   - **Assignees** = all authors (add the Paper Handler once known).
-   - **Do not** assign reviewers — the Paper Handler does that.
+A pull request always needs one committed file — that file is your cover page. Two ways to add it:
+
+**✅ Recommended — in the browser, no command line:**
+1. **Add file → Create new file** on the repo.
+2. Name it `Publications/<your-title>.md`, paste your completed cover page (copy [`Publications/summary_doc_template.md`](Publications/summary_doc_template.md) and fill in every field, including the **enumerated section outline**).
+3. At the bottom pick **Commit to a new branch**, then **Propose new file → Create pull request**. Branch, commit, and PR are created in one step.
+
+**Alternative — command line:** branch off `main`, add `Publications/<your-title>.md`, commit, push, open the PR.
+
+Either way: open it as a **Draft**, set **Assignees** = all authors (add the Paper Handler once known), assign **no reviewers** (the Paper Handler does that), and paste the cover-page text into the description too. The template's checklist loads automatically.
 
 ### 3 · Respond to feedback
-Reply to each comment in its thread, quoting the reviewer and tagging their username.
-Address **every** comment (a `Request:` may be answered with a justification rather than a change).
-**Offer co-authorship** to any reviewer whose feedback significantly improved the publication.
-When done, upload the revised version at the stated link and tell the Paper Handler.
+Reply to each comment in its thread, tagging the reviewer. Address **every** comment (a `Request:` may be answered with a justification instead of a change). **Offer co-authorship** to any reviewer whose feedback significantly improved the publication. When done, upload the revised version at the stated link and tell the Paper Handler.
 
 ---
 
-## For reviewers (any ISSC member)
+## For reviewers (any ISSC member) — everything in the browser
+
+You do **not** clone the repo, make a branch, or commit. Just:
 
 1. Open the review PR and read the cover page under **Files changed**.
-2. Leave feedback either as a **line comment** under the relevant section (then **Start a review**) or under **Conversation**.
-3. **Mark required feedback** by prefixing the comment with **`Request:`** — validity-critical. Everything else is a **suggestion** (improves quality but doesn't change core results).
-4. **Upvote with 👍.** More-upvoted comments are treated as higher priority to resolve.
-5. If you raised a `Request:`, you must engage with the authors' response, and you resolve your own comment once satisfied.
+2. Comment either as a **line comment** — hover a line, click the blue **+**, then **Start a review** — or under **Conversation** for general notes.
+3. **Mark required feedback** by prefixing the comment with **`Request:`** (validity-critical). Everything else is a **suggestion**.
+4. **Upvote with 👍** — more-upvoted comments are higher priority.
+5. If you raised a `Request:`, engage with the authors' reply and **resolve your own comment** once satisfied.
 
 > *You are reviewing readiness for publication as an ISSC product — teams produce better work than individuals. But the premise of the publication has already been developed by the authors and does not itself merit criticism.*
 
@@ -95,7 +103,7 @@ Labels live in [`.github/labels.yml`](.github/labels.yml) (category · class · 
 | Path | Purpose |
 |------|---------|
 | `Publications/summary_doc_template.md` | The cover page authors copy and complete |
-| `.github/PULL_REQUEST_TEMPLATE/` | Paper & software review PR templates (full lifecycle checklist) |
+| `.github/pull_request_template.md` | Auto-loading review checklist + who-does-what (used for every PR) |
 | `.github/ISSUE_TEMPLATE/register-publication.md` | Optional pre-PR registration record |
 | `.github/labels.yml` | Category / class / timeline / status labels |
 | `DEMO_WALKTHROUGH.md` | End-to-end worked example of one publication |
