@@ -1,4 +1,4 @@
-# Calibrating Photometric Redshift Uncertainties for LSST with Simulation-Based Inference
+# Photoz SBI
 
 <!-- EXAMPLE cover page — accompanies DEMO_WALKTHROUGH.md. Fictional. -->
 
