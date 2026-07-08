@@ -58,3 +58,5 @@ DC2 simulations; the ISSC Photo-z IG hackathon (Feb 2025) where the method was p
 6. Results
 7. Discussion & limitations
 8. Conclusions
+
+Added coverage results
