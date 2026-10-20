@@ -7,10 +7,10 @@ require the current approved ISSC publication policy. -->
 
 ## Identification and manuscript versions
 - **Submission type:** mock/training
-- **Title:**
-- **Corresponding/primary author(s) and contact handle(s):**
+- **Title:** Calibrating Photometric Redshift Uncertainties for LSST with Simulation-Based Inference
+- **Corresponding/primary author(s) and contact handle(s):** H. Landt
 - **Paper Handler:** to be assigned by PubCom Chair
-- **Summary revision/date:** v1 / YYYY-MM-DD
+- **Summary revision/date:** v1 / 2026-10-20
 - **Manuscript PDF revision/date and link:**
 - **Line-commentable manuscript revision/date and link:**
 - **Target journal or release venue and intended timeline:**
