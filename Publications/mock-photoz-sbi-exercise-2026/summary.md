@@ -1,4 +1,4 @@
-# [Publication title]
+# [Calibrating Photometric Redshift Uncertainties for LSST with Simulation-Based Inference]
 
 <!-- Copy this template as Publications/<unique-slug>/summary.md on a NEW branch.
 The PDF and line-commentable manuscript should be included in the SAME publication directory/PR.
