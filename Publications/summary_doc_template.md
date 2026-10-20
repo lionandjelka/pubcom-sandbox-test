@@ -1,75 +1,72 @@
-# [Publication Title]
+# [Publication title]
 
-<!--
-PUBLICATION SUMMARY DOCUMENT ("cover page").
-Complete every field below, then follow the steps in the README to open a Pull Request.
-The PubCom Paper Handler may adjust Category / Class / Timeline after a procedural check.
-Fields marked (required) block the start of review if left blank.
--->
+<!-- Copy this template as Publications/<unique-slug>/summary.md on a NEW branch.
+The PDF and line-commentable manuscript should be included in the SAME publication directory/PR.
+For mock exercises do NOT use real confidential data. Category/stream and final approval
+require the current approved ISSC publication policy. -->
 
-## Classification
+## Identification and manuscript versions
+- **Submission type:** mock/training or real (real only in appropriate approved infrastructure)
+- **Title:**
+- **Corresponding/primary author(s) and contact handle(s):**
+- **Paper Handler:** to be assigned by PubCom Chair
+- **Summary revision/date:** v1 / YYYY-MM-DD
+- **Manuscript PDF revision/date and link:**
+- **Line-commentable manuscript revision/date and link:**
+- **Target journal or release venue and intended timeline:**
 
-- **Category** (required — Paper Handler confirms/adjusts):
-  - [ ] 1 · Mandatory (fostered by ISSC activities / used ISSC resources — ISSC is an author, collaboration-wide review)
-  - [ ] 2 · Encouraged (by ISSC members, within remit, did not directly use ISSC resources)
-  - [ ] 3 · Optional (any LSST-community member requesting ISSC review as a service)
-- **Class** (required):
-  - [ ] a · Paper (journal article, White Paper, Research Note — anything arXiv-able)
-  - [ ] b · Peer-reviewed conference contribution (proceedings, special paper)
-  - [ ] c · Scholarly material on official LSST web resources (blog, tech notes, tutorials)
-  - [ ] d · Significant scientific report (dissertation, thesis, book/review chapter, project)
-  - [ ] e · Significant data/software deliverable (versioned software, data release, docs)
-  - [ ] f · Non-peer-reviewed conference contribution (oral / poster)
-  - [ ] g · Book, book chapter, field summary, review section
-- **Timeline stream** (required):
-  - [ ] i · Accelerated — 1-week First Review, ≥3 days per follow-up stage
-  - [ ] ii · Standard — 2-week First Review, ≥1 week follow-up
-  - [ ] iii · Extended — 3-week First Review, ≥1 week follow-up
+## Provisional classification (Paper Handler to confirm)
+- **Category (select one):** [ ] 1 Mandatory   [ ] 2 Encouraged   [ ] 3 Optional
+- **Category rationale and any ISSC resources or activity:**
+- **Class (select one):** [ ] a Paper  [ ] b Peer-reviewed conference  [ ] c Official web content  [ ] d Report/thesis  [ ] e Data/software deliverable  [ ] f Non-peer-reviewed conference  [ ] g Book/review
+- **Timeline (select one):** [ ] i Accelerated   [ ] ii Standard   [ ] iii Extended
+- **Current approved manual reference / check:** pending Handler confirmation
 
-## People
+## Authors, collaborators and reviewers
+- **Full author list and affiliations:**
+- **Contributor statements** (name — collaboration — contribution):
+- **Host ISSC Interest Group / other collaboration (if any):**
+- **Suggested subject expertise/reviewers (optional; Handler invites):**
+- **Known reviewer conflicts/other disclosure (if any):**
 
-- **Author contact(s)** (required — 1 to 3; **at least one must be an ISSC member**; may change during review):
-- **Full author list:**
-- **Host Interest Group:**
-- **Requested expert reviewers** (optional — names only; the Paper Handler invites them):
-- **Contributors** (one line each — `Name — represented SC — contribution statement`):
-  -
-
-## Publication
-
-- **Where the publication can be found** (required — PDF / Overleaf / GitHub / Zenodo, etc.):
-- **Intended publication venue:**
-- **Slack channel:**
-
-## Review timeline (set with the Paper Handler, driven by the stream above)
-
-- **First Review deadline:**
-- **Follow-up Review deadline:**
-
-## Data rights
-
-<!-- Required if the work touches real (proprietary) Rubin data. -->
-
-- **Does this work use proprietary/real Rubin data?** yes / no
-- **Who holds data rights:**
-- **SC Federation liaison / ICA note:** (ISSC members should only need a normal ICA to contribute to work that would otherwise require data rights — record the liaison here.)
+## Data, resources and rights
+- **Data and software resources used:**
+- **Real Rubin observational data?** yes / no / unknown
+- **Proprietary or restricted data?** yes / no / unknown
+- **Data-rights and release basis:**
+- **Cross-collaboration liaison / ICA needs, if applicable:**
+- **Attribution or acknowledgment issue to check:**
 
 ## Abstract
 
-[context, aims, methods, results, conclusions]
+[Insert the manuscript abstract; do not substitute placeholder claims for evidence.]
 
-## Resources used
+## Detailed section outline (must match the submitted manuscript)
 
-[software, data, skills — and any ISSC activities (interest-group meetings, hackathons, incubators) that fostered the work; this can affect the Category]
+1. Introduction
+2. Data
+3. Methods
+4. Validation
+5. Results
+6. Discussion
+7. Conclusions
 
-## Detailed description — section outline
+## Review dates (Paper Handler completes)
+- **First Review opened:**
+- **First Review deadline:**
+- **Follow-up opened/deadline, if any:**
+- **Reviewers formally requested:**
 
-<!--
-REQUIRED. Enumerate the publication's sections/subsections.
-Review is content-specific: reviewers leave comments keyed to the numbers below,
-so keep this list aligned with the actual structure of the publication.
--->
+## Revision history
 
-1.
-2.
-3.
+| Version / date | Files or stable manuscript URL | Main changes and linked comments |
+|---|---|---|
+| v1 / YYYY-MM-DD | | Original submission |
+
+## Final disposition (Handler + Chair complete, not the author at submission)
+- **Handler recommendation/date and PR comment link:**
+- **Chair decision/date and PR comment link:**
+- **Outstanding scientific/procedural conditions:**
+- **Confirmed attribution and data-rights disposition:**
+- **Final version/link, if cleared:**
+- **Training or real-publication status:**
