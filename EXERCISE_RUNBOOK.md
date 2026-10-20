@@ -1,49 +1,42 @@
-# PubCom exercise runbook: actual volunteer submission, then committee review
+# PubCom mock publication review — asynchronous runbook
 
-**Objective:** test publication intake, Handler appointment, two scientific reviews, author response, follow-up, Chair decision and archival traceability **on a PR submitted by someone outside PubCom**.
+**Format:** 10 **working days**, no live committee meeting required. The volunteer author submits a **fictional paper** through a Draft Pull Request; PubCom then processes that PR asynchronously. The authoritative step-by-step plan is [ASYNC_EXERCISE_GUIDE.md](ASYNC_EXERCISE_GUIDE.md). For responsibilities, use the unchanged [role cards](ROLE_INSTRUCTIONS.md) and [review protocol](REVIEW_PROTOCOL.md).
 
-**Participants:** one volunteer corresponding author, one PubCom Chair/facilitator, one PubCom Paper Handler, two reviewers (preferably different accounts), and an optional observer. Existing historical PRs are **not** the exercise PR.
+> **This replaces the previous 60-minute live-session runbook for this pilot only.** The short test schedule is **not** the formal ISSC publication-review timetable. The approved current ISSC policies govern real papers, authorship, data rights and clearance. This is a public training repository; use fictional/safe materials only.
 
-## Before the exercise (organizer)
+## Organizer — before kickoff
 
-**First, upgrade the repository:** upload the public documentation/templates package on a new setup branch and merge its documentation PR into `main` *before* the volunteer starts. This avoids pulling template edits into the same PR as the mock paper. The fictional manuscript and private reviewer answer key must **not** be uploaded to `main`.
+- [ ] Decide Day 1 and write the **actual calendar deadline and agreed time zone** for every stage (working days exclude weekends and agreed holidays).
+- [ ] Confirm the documentation upgrade is on `main`, but **do not upload the mock manuscript into `main`**.
+- [ ] Assign a separate volunteer author, Chair, Handler, R1, and R2, with usable GitHub accounts and appropriate permissions.
+- [ ] Give the volunteer the **separate author packet** (summary, Markdown manuscript and PDF), plus [AUTHOR_HANDOFF.md](AUTHOR_HANDOFF.md).
+- [ ] Keep the Chair's **private answer key** out of this public repository; share a 5–7 minute orientation recording only if helpful.
+- [ ] Announce the agreed notification channel, due dates and time zone to all participants.
 
-**A day or two before the meeting:**
+## Workflow and owner handoffs
 
-- Invite a volunteer author and email them the **separate author packet**. Share [author handoff](AUTHOR_HANDOFF.md) with them.
-- Agree who is Chair, Handler and each reviewer. Check that **each person has a separate GitHub account** and appropriate permission to carry out their role.
-- Ask the volunteer to commit `summary.md`, `manuscript_v1.md` and `manuscript_v1.pdf` under a unique `Publications/<slug>/` directory on their own branch and open a **Draft PR**, targeting `main`.
-- Require the PR link before the meeting. If necessary, assign the Handler in a short pre-meeting message without initiating formal review.
-- The Chair privately reviews the **facilitator answer key** supplied separately, not stored publicly in the repository.
-- Check PR and reviewer access; Settings → Rules → Rulesets / branch protection as applicable. No rule is assumed to exist. Check whether reviewers have the *ability* to resolve conversations; if not the Handler can document and close after confirmation.
-
-## Live session — 60 minutes
-
-| Time | Lead | Action | Verifiable output |
+| Day | Owner | Required output | Handler's next notification |
 |---|---|---|---|
-| 0–5 min | Chair | Confirm aim, roles, PR link and mock-only status; assign/confirm Handler | Everyone opens the same author PR |
-| 5–12 min | Handler | Read PR/files; check metadata, simulated data rights and manuscript v1; verify category/class/stream; record compressed mock deadline | Handler screening comment and labels |
-| 12–15 min | Handler | Mark Draft PR **Ready for review**, request two reviewers and announce opening | Requested reviewers; `status: first review` |
-| 15–28 min | Reviewers | Read PDF; comment **on Markdown manuscript lines**. At least two scientific `Request:` comments and one `Suggestion:` | Separate review comments by distinct accounts |
-| 28–40 min | Author | Answer each thread; amend unsupported claims; commit `manuscript_v2.md` and update summary's revision log | Same PR shows v1 and v2, plus replies |
-| 40–48 min | Reviewers | Examine v2; explicitly say what is resolved and what still requires work | Review follow-up, thread status |
-| 48–53 min | Handler | Record each `Request:` outcome; recommend approval / conditional hold / return for revision | Formal Handler recommendation comment |
-| 53–57 min | Chair | Post a **distinct decision comment** with reasons and conditions; this is not a real clearance | Chair decision in Conversation |
-| 57–60 min | Observer / all | Identify permission, UI and policy issues; record next steps | Short debrief record |
+| **1** | Volunteer author | One **Draft PR** with `summary.md`, `manuscript_v1.md`, `manuscript_v1.pdf` in a dedicated `Publications/<slug>/` directory | Acknowledge receipt and confirm PR URL |
+| **2** | Chair / Handler | Handler assigned; intake completeness checked; PR marked Ready; classifications/status applied; two reviewers invited; deadlines recorded | Announce First Review start and cutoff |
+| **3–5** | R1 and R2 | Independent written comments on **manuscript** lines, including actionable `Request:` items | Day 4/5 reminder as needed; compile requests |
+| **6–7** | Volunteer author | Replies in the actual review threads; `manuscript_v2.md` in **same PR**; `summary.md` revision log updated | Notify reviewers of recheck deadline |
+| **8–9** | R1 / R2 / Handler | Reviewers recheck; Handler lists resolved, outstanding and unacknowledged issues | Close follow-up and notify Chair |
+| **10** | Handler then Chair | Separate Handler recommendation and dated Chair mock decision; process completion recorded | Post final training-only status and debrief |
 
-**Mock deadline only:** The session's accelerated timing tests the mechanics; it does *not* satisfy the real publication manual's First Review or follow-up duration. For real reviews, the Handler records actual dates under the approved policy.
+## At each stage, the Handler documents
 
-## What reviewers should actually inspect
+- **Opening:** one category/class/timeline and current status label, reviewers, current PDF/Markdown versions, due dates with time zone.
+- **First Review close:** list each scientific request with author response deadline and any nonresponding reviewer.
+- **Author revision handoff:** cite the v2 file and summary revision log and @mention relevant commenters.
+- **Follow-up close:** table `Request | author action | reviewer confirmation | outstanding work`, including unanswered comments.
+- **Final recommendation:** distinguish scientific adequacy from whether the GitHub workflow functioned. The Chair writes a **separate decision comment** with reasons and conditions.
 
-Read the **manuscript content**, not merely the `summary.md` metadata. For this science case, test: sample independence; validity of train/test split; whether quantitative evidence supports stated calibration and faint-end claims; traceability of revised text. For specificity, cite manuscript section/lines. Avoid inventing missing data or giving automatic approval simply because language was softened.
+**Handling silence:** send a dated reminder; if the deadline is missed, document nonresponse and let the Chair decide whether to extend the training window or record a test limitation. No reply is **never** equivalent to scientific approval. Do not quietly resolve an unresolved request or infer PubCom clearance from GitHub's Approve/merge controls.
 
-## Correct scientific outcome is allowed to be “return for revision”
+## How this ends
 
-The exercise is successful even if the mock paper is **not** cleared. A review can document that missing independent validation requires further analysis. The Handler should separate resolved *wording* concerns from unresolved *scientific evidence* requests and recommend accordingly. The Chair should record a reasoned, clearly mock-only decision.
-
-## After the meeting
-
-1. In PR Conversation, label it clearly `TRAINING COMPLETED — NO SCIENTIFIC CLEARANCE` and link the Handler recommendation and Chair decision.
-2. Remove outdated status labels and choose the most faithful status **only where current taxonomy supports it**. Do not use `status: concluded` to imply real scientific approval; explain completion in comments.
-3. **Leave the PR open/close it as appropriate for the trial; do not automatically merge the fictional submission into `main`.** If preserving the PR in GitHub is the objective, closing without merge retains discussion history.
-4. Fill the [debrief checklist](DEBRIEF_CHECKLIST.md) and decide what to adjust before real deployment.
+- Post `TRAINING COMPLETED — NO REAL SCIENTIFIC CLEARANCE` in the PR Conversation, with direct links to the Handler recommendation and Chair decision.
+- Keep the fictional submission PR as an auditable training record. **Do not automatically merge it** into `main`; if appropriate, close it without merge after comments are complete.
+- Record issues using [DEBRIEF_CHECKLIST.md](DEBRIEF_CHECKLIST.md): access, notifications, discoverability, comment resolution, version control, responsibilities, and timeline feasibility.
+- Retain the old [DEMO_WALKTHROUGH.md](DEMO_WALKTHROUGH.md) and [PR #6](https://github.com/lionandjelka/pubcom-sandbox-test/pull/6) as independent historical practice examples.
