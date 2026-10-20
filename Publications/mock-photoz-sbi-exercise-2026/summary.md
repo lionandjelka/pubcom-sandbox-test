@@ -11,42 +11,46 @@ require the current approved ISSC publication policy. -->
 - **Corresponding/primary author(s) and contact handle(s):** H. Landt
 - **Paper Handler:** to be assigned by PubCom Chair
 - **Summary revision/date:** v1 / 2026-10-20
-- **Manuscript PDF revision/date and link:**
-- **Line-commentable manuscript revision/date and link:**
-- **Target journal or release venue and intended timeline:**
+- **Manuscript PDF revision/date and link:** TBD
+- **Line-commentable manuscript revision/date and link:** TBD
+- **Target journal or release venue and intended timeline:** to be submitted to ApJ after this review
 
 ## Provisional classification (Paper Handler to confirm)
-- **Category (select one):** [ ] 1 Mandatory   [ ] 2 Encouraged   [ ] 3 Optional
-- **Category rationale and any ISSC resources or activity:**
-- **Class (select one):** [ ] a Paper  [ ] b Peer-reviewed conference  [ ] c Official web content  [ ] d Report/thesis  [ ] e Data/software deliverable  [ ] f Non-peer-reviewed conference  [ ] g Book/review
-- **Timeline (select one):** [ ] i Accelerated   [ ] ii Standard   [ ] iii Extended
+- **Category (select one):** [ x] 1 Mandatory   [ ] 2 Encouraged   [ ] 3 Optional
+- **Category rationale and any ISSC resources or activity:** involves several ISSC members and work falls within ISSC remit
+- **Class (select one):** [x ] a Paper  [ ] b Peer-reviewed conference  [ ] c Official web content  [ ] d Report/thesis  [ ] e Data/software deliverable  [ ] f Non-peer-reviewed conference  [ ] g Book/review
+- **Timeline (select one):** [ ] i Accelerated   [ x] ii Standard   [ ] iii Extended
 - **Current approved manual reference / check:** pending Handler confirmation
 
 ## Authors, collaborators and reviewers
-- **Full author list and affiliations:**
+- **Full author list and affiliations:** H. Landt, et al.
 - **Contributor statements** (name — collaboration — contribution):
 - **Host ISSC Interest Group / other collaboration (if any):**
 - **Suggested subject expertise/reviewers (optional; Handler invites):**
 - **Known reviewer conflicts/other disclosure (if any):**
 
 ## Data, resources and rights
-- **Data and software resources used:**
-- **Real Rubin observational data?** yes / no / unknown
-- **Proprietary or restricted data?** yes / no / unknown
+- **Data and software resources used:** simulated galaxies
+- **Real Rubin observational data?** no
+- **Proprietary or restricted data?** no
 - **Data-rights and release basis:**
 - **Cross-collaboration liaison / ICA needs, if applicable:**
 - **Attribution or acknowledgment issue to check:**
 
 ## Abstract
 
-[Insert the manuscript abstract; do not substitute placeholder claims for evidence.]
+We explore simulation-based inference (SBI) for photometric-redshift uncertainty calibration using
+synthetic LSST-like galaxy photometry, comparing it with a mixture density network baseline. A
+visually nearly uniform probability-integral-transform (PIT) histogram motivates the claim that SBI
+gives calibrated 68% and 95% credible intervals, including faint galaxies. We conclude that the
+approach generalizes reliably to previously unseen sources.
 
 ## Detailed section outline (must match the submitted manuscript)
 
 1. Introduction
 2. Data
-3. Methods
-4. Validation
+3. SBI and baseline
+4. Calibration assessment
 5. Results
 6. Discussion
 7. Conclusions
