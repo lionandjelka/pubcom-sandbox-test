@@ -1,6 +1,6 @@
 # Demo: one publication, end to end
 
-A complete walkthrough of the ISSC review process as it would play out on GitHub, mapped
+A walkthrough of the ISSC review process as it would play out on GitHub, mapped
 step-by-step to the Publication Review Manual (v1.0). Everything below is **fictional** —
 names, handles, and dates are invented — but every action is a real thing you would do in
 this repository. The cover page used here is [`Publications/EXAMPLE_photoz_sbi.md`](Publications/EXAMPLE_photoz_sbi.md).
@@ -21,7 +21,7 @@ Because it was fostered by an ISSC activity, it is **Category 1 · Mandatory**, 
 > Preliminary **1 · Mandatory**, **a · Paper**. We'd like **@lindqvist-photoz** invited as an
 > expert reviewer. Author contacts: @rivera-astro (ISSC) and @okonkwo-ml.
 
-**Chair → authors:** assigns **@handler-hermine** as Paper Handler.
+**Chair → authors:** assigns **@handler** as Paper Handler.
 
 **Paper Handler → authors:** confirms the work is in ISSC remit, keeps Category 1 / Class a,
 and — because it's a standard-length paper — sets **Timeline ii · Standard (2-week First Review)**.
@@ -49,7 +49,7 @@ Reminds them of the next steps.
 
 ## Stage 2 — Paper Handler opens the First Review  *(Manual §3, steps 7–8)*
 
-@handler-hermine:
+@handler:
 - checks procedural compliance — cover page complete, link resolves, outline present ✔
 - applies labels: `Mandatory` · `class: a — paper` · `Standard` · `status: first review`
 - converts **Draft → Ready for review**
@@ -102,7 +102,7 @@ The co-authorship offer to @lindqvist-photoz is logged in the thread *(Manual §
 
 ## Stage 5 — Paper Handler closes the First Review  *(Manual §3, steps 12–13)*
 
-@handler-hermine emails reviewers to re-review and resolve.
+@handler emails reviewers to re-review and resolve.
 - @okoro-cosmo: satisfied → resolves their own comment.
 - @bui-stats: suggestion, addressed → resolved.
 - @lindqvist-photoz: hasn't clicked resolve by the deadline. Authors say it's addressed.
