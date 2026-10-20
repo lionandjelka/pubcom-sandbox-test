@@ -1,4 +1,4 @@
-# [Calibrating Photometric Redshift Uncertainties for LSST with Simulation-Based Inference]
+# Calibrating Photometric Redshift Uncertainties for LSST with Simulation-Based Inference
 
 <!-- Copy this template as Publications/<unique-slug>/summary.md on a NEW branch.
 The PDF and line-commentable manuscript should be included in the SAME publication directory/PR.
@@ -6,7 +6,7 @@ For mock exercises do NOT use real confidential data. Category/stream and final 
 require the current approved ISSC publication policy. -->
 
 ## Identification and manuscript versions
-- **Submission type:** mock/training or real (real only in appropriate approved infrastructure)
+- **Submission type:** mock/training
 - **Title:**
 - **Corresponding/primary author(s) and contact handle(s):**
 - **Paper Handler:** to be assigned by PubCom Chair
