@@ -11,8 +11,8 @@ require the current approved ISSC publication policy. -->
 - **Corresponding/primary author(s) and contact handle(s):** hermilw
 - **Paper Handler:** to be assigned by PubCom Chair
 - **Summary revision/date:** v1 / 2026-10-20
-- **Manuscript PDF revision/date and link:** TBD
-- **Line-commentable manuscript revision/date and link:** TBD
+- **Manuscript PDF revision/date and link:** v2 / 2026-11-11
+- **Line-commentable manuscript revision/date and link:** 2026-11-11
 - **Target journal or release venue and intended timeline:** to be submitted to ApJ after this review
 
 ## Provisional classification (Paper Handler to confirm)
@@ -40,7 +40,7 @@ require the current approved ISSC publication policy. -->
 ## Abstract
 
 We explore simulation-based inference (SBI) for photometric-redshift uncertainty calibration using
-synthetic LSST-like galaxy photometry, comparing it with a mixture density network baseline. A
+synthetic LSST-like galaxy photometry, comparing it with a mixture density network (MDN) baseline. A
 visually nearly uniform probability-integral-transform (PIT) histogram motivates the claim that SBI
 gives calibrated 68% and 95% credible intervals, including faint galaxies. We conclude that the
 approach generalizes reliably to previously unseen sources.
@@ -66,6 +66,7 @@ approach generalizes reliably to previously unseen sources.
 | Version / date | Files or stable manuscript URL | Main changes and linked comments |
 |---|---|---|
 | v1 / YYYY-MM-DD | | Original submission |
+| v2 / 2026-11-11 | | First revision |
 
 ## Final disposition (Handler + Chair complete, not the author at submission)
 - **Handler recommendation/date and PR comment link:**
