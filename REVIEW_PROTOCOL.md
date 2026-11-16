@@ -2,6 +2,36 @@
 
 **Review both manuscript formats:** read `manuscript_v1.pdf` for the paper-like submission, and use **Files changed → `manuscript_v1.md`** for comments anchored to exact manuscript text. `summary.md` is for intake metadata, not a replacement for peer review.
 
+
+
+### Submitting a complete review
+
+To avoid generating separate notifications for
+every scientific comment, reviewers are encouraged
+to collect their comments into one review submission.
+
+1. Open the Pull Request and select Files changed.
+2. Click the blue + next to the relevant manuscript line.
+3. Enter the comment and select Start a review,
+   rather than Add single comment.
+4. Continue reading and use Add review comment
+   for each additional point.
+5. When finished, select Review changes.
+6. Choose Comment and then Submit review.
+
+The author can then access the complete submitted
+review and respond to each comment in its own thread.
+
+GitHub notification behaviour also depends on
+individual notification settings. A consolidated
+review submission does not guarantee exactly
+one email notification.
+
+Authors and reviewers may communicate directly
+in GitHub. The Paper Handler monitors progress,
+sends reminders, and records the review outcome.
+
+
 ## Suggested format for an actionable comment
 
 - **`Request:`** A scientific, data-rights, or procedural deficiency that needs resolution. Include *location, concern, reason and a feasible remedy*. Example: `Request: §3 describes held-out rows as unseen galaxies, but five realizations can belong to the same source. Please use an ID-disjoint split or remove the generalization claim, and state which verification remains outstanding.`
