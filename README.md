@@ -1,63 +1,107 @@
 # LSST ISSC Publication Committee — GitHub review sandbox
 
-**Training repository for a full publication-review exercise.** This public repository is **not** an official submission or clearance portal. All training documents and comments must use fictional or otherwise safe-to-publish content; do not post confidential manuscripts, restricted Rubin data, private correspondence, or personal information.
+> **Training repository, not an official publication-clearance portal.** This repository is **public**. Use only fictional or explicitly public materials. Do not upload confidential manuscripts, restricted Rubin data, private correspondence, reviewer identities requiring confidentiality, or personal information. The current approved ISSC publication policy takes precedence over this training guide.
 
-**The mock paper is deliberately submitted by a volunteer author through a new Draft Pull Request, not pre-loaded onto `main`.** PubCom members then review *that actual PR*. Do not merge the manuscript into `main` before the exercise.
+This sandbox tests a transparent **internal scientific-readiness and collaboration-review workflow**. The process does **not** substitute for independent journal peer review, and GitHub's `Approve` / `Merge` controls are **not** ISSC or journal publication decisions.
 
-## Begin here
+**The mock paper is submitted by a volunteer author using a new branch and Draft Pull Request (PR).** It should **not** be preloaded into `main`. All participants review the *same actual PR*. Do not reuse the older demonstration PRs.
 
-| You are | Read | Your initial action |
+## Start here — instructions by role
+
+| Your role | Read first | Your initial action |
 |---|---|---|
-| Volunteer submitting author | [Author handoff](AUTHOR_HANDOFF.md) and [role instructions](ROLE_INSTRUCTIONS.md) | Create one **Draft PR** containing a summary, manuscript Markdown and PDF |
-| PubCom Chair | [Session runbook](EXERCISE_RUNBOOK.md) | Assign a Paper Handler and confirm roles |
-| Paper Handler | [Role instructions](ROLE_INSTRUCTIONS.md) and [review protocol](REVIEW_PROTOCOL.md) | Screen the submitted PR; apply labels, invite reviewers |
-| Reviewer / ISSC participant | [Role instructions](ROLE_INSTRUCTIONS.md) | Read the submitted PDF, comment on manuscript Markdown in **Files changed** |
-| Observer | [Debrief checklist](DEBRIEF_CHECKLIST.md) | Observe workflow bottlenecks and record findings |
+| Volunteer author | [Author handoff](AUTHOR_HANDOFF.md), [role cards](ROLE_INSTRUCTIONS.md), [format conversion](CONVERT_TO_MARKDOWN.md) | Open one Draft PR with `summary.md`, `manuscript_v1.pdf` and `manuscript_v1.md` |
+| Paper Handler | [Role cards](ROLE_INSTRUCTIONS.md), [review protocol](REVIEW_PROTOCOL.md), [runbook](EXERCISE_RUNBOOK.md) | Screen the submission; assign reviewers, labels and dates |
+| Reviewer | [Review protocol](REVIEW_PROTOCOL.md), [role cards](ROLE_INSTRUCTIONS.md) | Read the PDF; use **Start a review** to collect Markdown comments, then **Submit review** |
+| Chair | [Exercise runbook](EXERCISE_RUNBOOK.md), [role cards](ROLE_INSTRUCTIONS.md) | Appoint Handler and confirm reviewer coverage |
+| Observer | [Debrief checklist](DEBRIEF_CHECKLIST.md) | Record usability, permissions and notification issues |
 
-[Open pull requests](https://github.com/lionandjelka/pubcom-sandbox-test/pulls) · [Publication summary template](Publications/summary_doc_template.md)
+[Open PRs](https://github.com/lionandjelka/pubcom-sandbox-test/pulls) · [Submission summary template](Publications/summary_doc_template.md) · [Full asynchronous pilot guide](ASYNC_EXERCISE_GUIDE.md)
 
-## The workflow
+## What lives where?
+
+| Item | Purpose |
+|---|---|
+| `Publications/<paper-slug>/summary.md` | The authoritative **registration metadata** (title, contacts, class/category, data rights, manuscript versions, dates) |
+| `manuscript_v1.pdf` | The readable, formatted **scientific manuscript** |
+| `manuscript_v1.md` | Optional for future real-policy decisions, but **used in this pilot** as the line-commentable companion to the PDF |
+| Pull Request **Conversation** and **Files changed** | The authoritative **review record**: requests, replies, updated versions, Handler recommendation and Chair decision |
+
+Do not copy the entire summary into the PR description. Include short links and a review checklist. When linking files from a PR description, use actual GitHub **blob URLs on the paper's branch**, not ambiguous relative paths that can open the Compare page.
+
+## Workflow at a glance
 
 ```mermaid
 flowchart TD
-    A[Volunteer author registers mock paper] --> B[Chair assigns Paper Handler]
-    B --> C[Author commits summary + v1 PDF + v1 Markdown on new branch]
-    C --> D[Author opens Draft Pull Request]
-    D --> E[Handler checks submission and starts First Review]
-    E --> F[Two reviewers leave scientific comments]
-    F --> G[Author replies and commits v2 text]
-    G --> H{Material requests resolved?}
-    H -->|No| I[Handler documents follow-up or remaining conditions]
-    H -->|Yes| J[Handler writes recommendation]
-    I --> J
-    J --> K[Chair posts separate written mock decision]
-    K --> L[Status recorded; PR retained as exercise evidence]
+    A[Author registers mock paper] --> B[Chair assigns Paper Handler]
+    B --> C[Author commits summary, PDF and Markdown on publication branch]
+    C --> D[Author opens one Draft PR]
+    D --> E[Handler screens intake, labels and reviewer invitations]
+    E --> F[First Review: reviewers batch comments and Submit review]
+    F --> G[Author and reviewers discuss directly in threads]
+    G --> H[Author commits v2 on same PR]
+    H --> I{Material requests addressed?}
+    I -->|No| J[Handler tracks outstanding evidence or follow-up]
+    I -->|Yes| K[Handler records recommendation]
+    J --> K
+    K --> L[Chair records separate dated training decision]
+    L --> M[Keep/close mock PR; do not automatically merge]
 ```
 
-## Important distinctions
+## Review comments and notifications — meeting update (11 November 2026)
 
-- The **paper** is the manuscript PDF/Markdown submitted in a PR. The **summary document** is metadata and the review record; comments on the summary alone are not manuscript review.
-- **`Request:`** at the beginning of a review comment means the reviewer believes an issue requires a substantive response. **`Suggestion:`** is advisory; **`Question:`** requests clarification. These prefixes are conventions, not automated GitHub statuses.
-- GitHub **Review changes → Comment / Request changes / Approve** is a platform operation. It does **not** represent a final PubCom decision. For the live exercise, select **Comment**, unless the facilitator explicitly tests GitHub approval or review-blocking behaviour.
-- **Unresolved conversations only block merging when the repository's branch protection/rulesets require their resolution**. The Handler must follow up regardless of automation.
-- The committee's determination is a **separate dated comment by the Chair** after the Handler's recommendation. A merge or a GitHub approval is not permission to submit a real scientific paper.
-- For the exercise, the decision may properly be **return for major revision**: the fictional manuscript contains intentionally unsubstantiated claims. A successful workflow test is not the same as scientific acceptance.
+An author in the first test received a separate email for each review comment. To reduce notification noise, reviewers should **collect comments in a pending review instead of posting them one at a time**:
+
+1. Open the PR → **Files changed** → locate `manuscript_v1.md`.
+2. Hover the relevant line → click **+** → type the comment → **Start a review**, *not* **Add single comment**.
+3. Repeat using **Add review comment** for other lines.
+4. When the whole review is ready, select **Review changes / Submit review** (button wording may vary).
+5. Add an overall summary, choose **Comment** for the pilot, then **Submit review**.
+
+Pending comments are not normally visible to the author until the review is submitted. Batching reduces fragmented notifications but does **not guarantee exactly one email**, because GitHub notification settings differ. See [REVIEW_PROTOCOL.md](REVIEW_PROTOCOL.md) for screenshots-independent detailed steps and alternatives.
+
+Authors and reviewers **may discuss submitted comments directly**; they need not wait for the Handler to authorize each reply. The Handler monitors deadlines, sends reminders, adjudicates difficult issues, and records the formal recommendation; the Chair issues a **separate** decision. A posted answer does not automatically resolve a scientific concern.
+
+## PDF, Markdown and LaTeX — meeting update (11 November 2026)
+
+For the **current mock exercise**, use both a PDF and Markdown manuscript. This tests GitHub's line-specific comment facility on a real paper-like submission. We have **not adopted a rule requiring Markdown for every real ISSC paper**.
+
+- Preferred conversion when source exists: **LaTeX (`.tex`) → Pandoc → Markdown (`.md`)**.
+- When only PDF exists: **PDF → Markdown** with extraction software, followed by careful checking; mathematical expressions can be damaged.
+- The committee is also considering **PDF-only plus one consolidated referee report** for complex/long manuscripts. No format decision has yet been made.
+
+Full installation and conversion instructions: **[CONVERT_TO_MARKDOWN.md](CONVERT_TO_MARKDOWN.md)**.
+
+## Scientific comments, status and authority
+
+- `Request:` substantive concern requiring a reasoned response; `Suggestion:` non-blocking improvement; `Question:` clarification needed. These are **text conventions**, not GitHub decision states.
+- GitHub **Comment**, **Approve** and **Request changes** are **platform review outcomes**, not policy-defined ISSC outcomes.
+- **Resolve conversation** closes a discussion in GitHub; it does not certify that evidence is sufficient. A reviewer may lack the permissions to resolve a thread; the Handler must document its scientific disposition separately.
+- Unresolved threads prevent merging **only if the relevant branch protection / ruleset enforces conversation resolution**. Other permissions, including who can close or merge PRs, must be confirmed with the repository administrators.
+- Scientific concerns are **not ranked by 👍 reaction counts**. The Handler considers their substance and explains unresolved requests.
+- Review participation does **not automatically** grant authorship, builder status or a collaboration acknowledgement; current approved policies apply.
 
 ## Existing labels and templates
 
-The sandbox's [label definitions](.github/labels.yml) cover Category (`Mandatory`, `Encouraged`, `Optional`), Class (`class: a — paper` etc.), Timeline (`Accelerated`, `Standard`, `Extended`) and workflow Status (`status: first review`, `status: author response`, `status: follow-up review`, `status: released`, `status: concluded`). One **current** status should be maintained at a time. The Paper Handler applies labels manually, even when label definitions are synced automatically.
+[Label definitions](.github/labels.yml) cover category (`Mandatory`, `Encouraged`, `Optional`), class (`class: a — paper`, etc.), timeline (`Accelerated`, `Standard`, `Extended`) and status (`status: first review`, `status: author response`, `status: follow-up review`, `status: released`, `status: concluded`). The Handler should keep **one current status label**; GitHub label definitions in YAML are not themselves a permissions scheme.
 
-The existing [PR template](.github/pull_request_template.md) and [publication summary](Publications/summary_doc_template.md) are for real *structure* but mock *content*. Registration may happen through the normal PubCom channel; GitHub Issues are optional and are not the review itself.
+[PR template](.github/pull_request_template.md) and [publication summary template](Publications/summary_doc_template.md) support the intake. Slack/email registration may precede the PR; a GitHub Issue is optional and is **not** the manuscript review.
 
-**Policy check:** this sandbox reflects the earlier ISSC publication-review workflow modeled here. Category definitions, formal timelines, authorship/attribution, data rights, reviewer obligations, and publication permission must be checked against the **current approved ISSC publication policy** before any real deployment. The mock session compresses elapsed review time for training and is not a completed policy-compliant real review.
+## Privacy and future official deployment
 
-## Preserve the existing practice material
+A public personal sandbox cannot be assumed to implement the privacy, branch protection, access and PR-close/merge restrictions required for actual scientific submissions. Reviewers may comment with read access, while editing branches, applying labels, resolving threads, and closing or merging may require different permissions. Specific controls must be verified on the target repository; **the committee has not approved a migration**.
 
-The original [worked demonstration](DEMO_WALKTHROUGH.md) and [historical PR #6](https://github.com/lionandjelka/pubcom-sandbox-test/pull/6) remain useful evidence. They are separate from the **new mock submission**. Please do not modify or reuse old training PRs for the volunteer exercise.
+The Chair will consult ISSC/LSST administrators (including Melissa and Alex, as appropriate) about official hosting, cross-collaboration access, confidentiality, and final authority. Do not infer that GitHub access confers scientific authorship or data rights.
+
+## Pilot timetable and past examples
+
+The [asynchronous exercise](ASYNC_EXERCISE_GUIDE.md) uses a **compressed 10-working-day simulation** for testing only, **not the formal ISSC review timelines**. Use the approved policy for any real manuscript.
+
+Historical [walkthrough](DEMO_WALKTHROUGH.md) and [demonstration PR #6](https://github.com/lionandjelka/pubcom-sandbox-test/pull/6) are preserved for reference. They illustrate earlier training assumptions and are **not the authority** for review decisions, authorship, or journal permission. New trials should use distinct branches and PRs.
 
 ## Four phases
 
-1. **Organizer first:** merge the **repository instructions upgrade** into `main`, check access, appoint volunteers and distribute the *separate* fictional paper packet directly to the volunteer author.
-2. **Author before the meeting:** opens their *own* Draft PR on a *different* publication branch containing the mock paper and completed metadata.
-3. **PubCom during the exercise:** Handler activates the PR, reviewers comment on it, author revises, and Chair decides.
-4. **Afterwards:** retain the PR or close it as a training record. Merge the paper only if specifically desired for sandbox recordkeeping, not because it is scientifically accepted.
+1. **Organizer:** check instructions, access, volunteers and safe fictional author packet; keep the answer key private.
+2. **Author:** create own publication branch, upload PDF/Markdown/summary, open Draft PR.
+3. **PubCom:** Handler activates the review; reviewers submit complete reviews; authors respond and commit revisions; Handler and Chair record separate dispositions.
+4. **Debrief:** track notifications, scientific clarity, permissions and effort; retain/close training PR without automatically merging a fictional manuscript.
