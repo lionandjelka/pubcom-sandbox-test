@@ -8,6 +8,35 @@
 - **`Suggestion:`** Optional presentation or reporting improvement. Example: `Suggestion: §4 should explain how the PIT comparison with the MDN will be shown, ideally with a figure caption and uncertainty information.`
 - **`Question:`** Clarification needed before judging whether there is a serious problem. Example: `Question: Is the faint sample counted in unique galaxies or noisy realizations?`
 
+- 
+### Submitting a complete review
+
+To avoid generating separate notifications for
+every scientific comment, reviewers are encouraged
+to collect their comments into one review submission.
+
+1. Open the Pull Request and select Files changed.
+2. Click the blue + next to the relevant manuscript line.
+3. Enter the comment and select Start a review,
+   rather than Add single comment.
+4. Continue reading and use Add review comment
+   for each additional point.
+5. When finished, select Review changes.
+6. Choose Comment and then Submit review.
+
+The author can then access the complete submitted
+review and respond to each comment in its own thread.
+
+GitHub notification behaviour also depends on
+individual notification settings. A consolidated
+review submission does not guarantee exactly
+one email notification.
+
+Authors and reviewers may communicate directly
+in GitHub. The Paper Handler monitors progress,
+sends reminders, and records the review outcome.
+
+
 **Submit the review:** hover line → click **+** → **Start a review** → add comments → top-right **Review changes** → **Comment** → **Submit review**. If a section is not in the GitHub diff (for example later revisions), comment under **Conversation** with explicit manuscript version and section. If you also use `Approve` or `Request changes`, explain why in the review text; this exercise does not depend on them.
 
 ## Revision comparison
