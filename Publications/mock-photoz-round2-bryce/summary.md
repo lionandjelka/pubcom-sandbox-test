@@ -60,7 +60,7 @@ We compare simulation-based inference (SBI) with a mixture density network (MDN)
 | v2 / 2026-11-25 | [Revised PDF](manuscript_v2.pdf) · [Revised Markdown](manuscript_v2.md) | Clarified the [row-level split and its effect on generalization](https://github.com/lionandjelka/pubcom-sandbox-test/pull/16#discussion_r4692082351). Added a [proposed 68% and 95% coverage test](https://github.com/lionandjelka/pubcom-sandbox-test/pull/16#discussion_r4692087175) and withdrew the unsupported calibration and faint-end performance claims. |
 
 ## Final disposition (Handler + Chair complete, not the author at submission)
-- **Handler recommendation/date and PR comment link:**Exercise-only procedural completion / 2026-11-25 / [Handler recommendation]https://github.com/lionandjelka/pubcom-sandbox-test/pull/16#issuecomment-7164529941
+- **Handler recommendation/date and PR comment link:**Exercise-only procedural completion / 2026-11-25 / [Handler recommendation](https://github.com/lionandjelka/pubcom-sandbox-test/pull/16#issuecomment-7164529941)
 - **Chair decision/date and PR comment link:** Exercise-only procedural completion / 2026-11-25 / [Chair decision](https://github.com/lionandjelka/pubcom-sandbox-test/pull/16#issuecomment-7164566139)
 - **Outstanding scientific/procedural conditions:** No empirical 68%/95% coverage or galaxy-disjoint validation; combined Handler/Reviewer role and compressed timeline.
 - **Confirmed attribution and data-rights disposition:** Entirely fictional training data; no real publication clearance or attribution decision.
