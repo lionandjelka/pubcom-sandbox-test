@@ -6,7 +6,7 @@
 - **Corresponding/primary author(s) and contact handle(s):** Bryce T. Bolin (mock Author), GitHub @brycebolin.
 - **Paper Handler:** Pending assignment by the PubCom Chair.
 - **Summary revision/date:** v2 / 2026-11-25
-- **Manuscript PDF revision/date and link:** [v1 / 2026-10-20 (PDF)](manuscript_v1.pdf)
+- **Manuscript PDF revision/date and link:** [v1 / 2026-10-20 (PDF)](manuscript_v1.pdf) · [v2 / 2026-11-25 (PDF)](manuscript_v2.pdf)
 - **Line-commentable manuscript revision/date and link:** [v2 / 2026-11-25 (Markdown)](manuscript_v2.md)
 - **Target journal or release venue and intended timeline:** ISSC PubCom sandbox, round 2. No external journal submission or release is planned.
 
@@ -57,7 +57,7 @@ We compare simulation-based inference (SBI) with a mixture density network (MDN)
 | Version / date | Files or stable manuscript URL | Main changes and linked comments |
 |---|---|---|
 | v1 / 2026-11-24 | [PDF](manuscript_v1.pdf) · [Markdown](manuscript_v1.md) | Round 2 submission of the 2026-10-20 exercise manuscript. |
-| v2 / 2026-11-25 | [Revised Markdown](manuscript_v2.md) | Clarified the [row-level split and its effect on generalization](https://github.com/lionandjelka/pubcom-sandbox-test/pull/16#discussion_r4692082351). Added a [proposed 68% and 95% coverage test](https://github.com/lionandjelka/pubcom-sandbox-test/pull/16#discussion_r4692087175) and withdrew the unsupported calibration and faint-end performance claims. |
+| v2 / 2026-11-25 | [Revised PDF](manuscript_v2.pdf) · [Revised Markdown](manuscript_v2.md) | Clarified the [row-level split and its effect on generalization](https://github.com/lionandjelka/pubcom-sandbox-test/pull/16#discussion_r4692082351). Added a [proposed 68% and 95% coverage test](https://github.com/lionandjelka/pubcom-sandbox-test/pull/16#discussion_r4692087175) and withdrew the unsupported calibration and faint-end performance claims. |
 
 ## Final disposition (Handler + Chair complete, not the author at submission)
 - **Handler recommendation/date and PR comment link:** Pending.
