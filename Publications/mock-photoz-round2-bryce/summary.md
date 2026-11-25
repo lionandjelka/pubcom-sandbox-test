@@ -5,9 +5,9 @@
 - **Title:** Calibrating Photometric Redshift Uncertainties for LSST with Simulation-Based Inference
 - **Corresponding/primary author(s) and contact handle(s):** Bryce T. Bolin (mock Author), GitHub @brycebolin.
 - **Paper Handler:** Pending assignment by the PubCom Chair.
-- **Summary revision/date:** v1 / 2026-11-24
+- **Summary revision/date:** v2 / 2026-11-25
 - **Manuscript PDF revision/date and link:** [v1 / 2026-10-20 (PDF)](manuscript_v1.pdf)
-- **Line-commentable manuscript revision/date and link:** [v1 / 2026-10-20 (Markdown)](manuscript_v1.md)
+- **Line-commentable manuscript revision/date and link:** [v2 / 2026-11-25 (Markdown)](manuscript_v2.md)
 - **Target journal or release venue and intended timeline:** ISSC PubCom sandbox, round 2. No external journal submission or release is planned.
 
 ## Provisional classification (Paper Handler to confirm)
@@ -34,7 +34,7 @@
 
 ## Abstract
 
-We explore simulation-based inference (SBI) for photometric-redshift uncertainty calibration using synthetic LSST-like galaxy photometry, comparing it with a mixture density network baseline. A visually nearly uniform probability-integral-transform (PIT) histogram motivates the claim that SBI gives calibrated 68% and 95% credible intervals, including faint galaxies. We conclude that the approach generalizes reliably to previously unseen sources.
+We compare simulation-based inference (SBI) with a mixture density network (MDN) for estimating photometric-redshift uncertainties. We split the synthetic photometry by noise realization, allowing measurements of the same simulated galaxy to enter both training and testing. The comparison therefore describes performance on held-out realizations. The illustrative probability-integral-transform (PIT) histogram motivates a direct test of interval coverage. Empirical coverage at 68% and 95%, performance on unseen galaxies, and any advantage at the faint end remain unmeasured.
 
 ## Detailed section outline (must match the submitted manuscript)
 
@@ -57,6 +57,7 @@ We explore simulation-based inference (SBI) for photometric-redshift uncertainty
 | Version / date | Files or stable manuscript URL | Main changes and linked comments |
 |---|---|---|
 | v1 / 2026-11-24 | [PDF](manuscript_v1.pdf) · [Markdown](manuscript_v1.md) | Round 2 submission of the 2026-10-20 exercise manuscript. |
+| v2 / 2026-11-25 | [Revised Markdown](manuscript_v2.md) | Clarified the [row-level split and its effect on generalization](https://github.com/lionandjelka/pubcom-sandbox-test/pull/16#discussion_r4692082351). Added a [proposed 68% and 95% coverage test](https://github.com/lionandjelka/pubcom-sandbox-test/pull/16#discussion_r4692087175) and withdrew the unsupported calibration and faint-end performance claims. |
 
 ## Final disposition (Handler + Chair complete, not the author at submission)
 - **Handler recommendation/date and PR comment link:** Pending.
