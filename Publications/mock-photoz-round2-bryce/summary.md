@@ -26,8 +26,8 @@
 
 ## Data, resources and rights
 - **Data and software resources used:** Entirely synthetic LSST-like photometry for 40,000 fictional galaxies with five noise realizations each. The manuscript describes an SBI estimator and a mixture density network baseline. It supplies no software or catalog.
-- **Real Rubin observational data?** yes / no / unknown
-- **Proprietary or restricted data?** yes / no / unknown
+- **Real Rubin observational data?** No.
+- **Proprietary or restricted data?** No.
 - **Data-rights and release basis:** Organizer-supplied fictional manuscript for the public training sandbox. No observational data are being released.
 - **Cross-collaboration liaison / ICA needs, if applicable:** None identified for this exercise.
 - **Attribution or acknowledgment issue to check:** No additional attribution is specified in v1.
