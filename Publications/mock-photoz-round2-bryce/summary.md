@@ -11,7 +11,7 @@
 - **Target journal or release venue and intended timeline:** ISSC PubCom sandbox, round 2. No external journal submission or release is planned.
 
 ## Provisional classification (Paper Handler to confirm)
-- **Category (select one):** Pending Handler confirmation.
+- **Category (select one):** 
 - **Category rationale and any ISSC resources or activity:** The simulated LSST-like photometry is used solely for the ISSC review pilot. The manuscript identifies no ISSC observational or computing resources.
 - **Class (select one):** [x] a Paper (provisional)
 - **Timeline (select one):** Pending Handler confirmation.
@@ -60,9 +60,9 @@ We compare simulation-based inference (SBI) with a mixture density network (MDN)
 | v2 / 2026-11-25 | [Revised PDF](manuscript_v2.pdf) · [Revised Markdown](manuscript_v2.md) | Clarified the [row-level split and its effect on generalization](https://github.com/lionandjelka/pubcom-sandbox-test/pull/16#discussion_r4692082351). Added a [proposed 68% and 95% coverage test](https://github.com/lionandjelka/pubcom-sandbox-test/pull/16#discussion_r4692087175) and withdrew the unsupported calibration and faint-end performance claims. |
 
 ## Final disposition (Handler + Chair complete, not the author at submission)
-- **Handler recommendation/date and PR comment link:** Pending.
-- **Chair decision/date and PR comment link:** Pending.
-- **Outstanding scientific/procedural conditions:** Pending.
-- **Confirmed attribution and data-rights disposition:** Pending.
-- **Final version/link, if cleared:** Pending.
-- **Training or real-publication status:** MOCK / TRAINING — fictional manuscript for the round 2 pilot.
+- **Handler recommendation/date and PR comment link:**Exercise-only procedural completion / 2026-11-25 / [Handler recommendation]https://github.com/lionandjelka/pubcom-sandbox-test/pull/16#issuecomment-7164529941
+- **Chair decision/date and PR comment link:** Exercise-only procedural completion / 2026-11-25 / [Chair decision](https://github.com/lionandjelka/pubcom-sandbox-test/pull/16#issuecomment-7164566139)
+- **Outstanding scientific/procedural conditions:** No empirical 68%/95% coverage or galaxy-disjoint validation; combined Handler/Reviewer role and compressed timeline.
+- **Confirmed attribution and data-rights disposition:** Entirely fictional training data; no real publication clearance or attribution decision.
+- **Final version/link, if cleared:** manuscript_v2.pdf and manuscript_v2.md — final mock versions only; not cleared for real publication.
+- **Training or real-publication status:** MOCK / TRAINING — NO PUBLICATION CLEARANCE.
